@@ -1,0 +1,87 @@
+{
+	"discord": {
+		"bot-user": {
+			"username": "BOT_USERNAME#NNNN",
+			"token": "BOT_ACCESS_TOKEN"
+		},
+		"client": {
+			"id": "CLIENT_ID",
+			"secret": "CLIENT_SECRET"
+		}
+	},
+	"greeting": "Hi everyone! I'm a help ticket bot, here to connect you and your questions to someone who can answer them. If you have any questions on how to use my functions, use `tic^help`.\n\nよろしくお願いします~",
+	"about-me": "",
+	"defaults": {
+		"permissions": ["READ_MESSAGES", "SEND_MESSAGES", "SEND_TTS_MESSAGES", "EMBED_LINKS", "ATTACH_FILES", "READ_MESSAGE_HISTORY", "MENTION_EVERYONE", "MOVE_MEMBERS", "CHANGE_NICKNAME"],
+		"channels": {
+			"help-text": "help-tickets",
+			"help-voice": "Help Tickets"
+		},
+		"logs": {
+			"info": {
+				"name": "info-file",
+				"filename": "./logs/filelog-info.log"
+			},
+			"error": {
+				"name": "error-file",
+				"filename": "./logs/filelog-error.log"
+			}
+		},
+		"prefix": "`tic`",
+		"index": {
+			"~": "settings",
+			"^": "information",
+			"!": "help-tickets"
+		},
+		"commands": {
+			"description": "A list of available commands. Commands are expected to be prefixed with `tic` followed by an index [`~`, `^`, `!`] that determines its type.",
+			"settings": {
+				"setAdmin": {
+					"description": "Set an existing Role as an administrator for this bot",
+					"example-usage": "`tic~setAdmin Admin Tag`"
+				},
+				"setHelper": {
+					"description": "Set an existing Role as a Ticket responder",
+					"example-usage": "`tic~setHelper Helper Tag`"
+				},
+				"setHelpTextChannel": {
+					"description": "Set an existing text channel as a place to resolve Tickets",
+					"example-usage": "`tic~setHelpTextChannel #text-channel`",
+					"aliases": ["setHTC"]
+				},
+				"setHelpVoiceChannel": {
+					"description": "Set an existing voice channel as a place to resolve Tickets",
+					"example-usage": "`tic~setHelpVoiceChannel Voice Channel`",
+					"aliases": ["setHVC"]
+				}
+			},
+			"information": {
+				"help": {
+					"description": "Print out a list of commands that this bot can handle",
+					"example-usage": "tic^help"
+				},
+				"about": {
+					"description": "Print out a short description about this bot",
+					"example-usage": "tic^about"
+				}
+			},
+			"help-tickets": {
+				"open": {
+					"description": "Open a new Ticket",
+					"example-usage": "tic!open Opening a new ticket",
+					"aliases": ["o"]
+				},
+				"reply": {
+					"description": "Reply to an open Ticket",
+					"example-usage": "tic!reply 1 Replying to Ticket#1",
+					"aliases": ["r"]
+				},
+				"close": {
+					"description": "Close an open Ticket",
+					"example-usage": "tic!close 1 Closing Ticket#1",
+					"aliases": ["c"]
+				}
+			}
+		}
+	}
+}
