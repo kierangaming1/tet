@@ -1,12 +1,12 @@
 {
 	"discord": {
 		"bot-user": {
-			"username": "BOT_USERNAME#NNNN",
-			"token": "BOT_ACCESS_TOKEN"
+			"username": "Super man#3697",
+			"token": "NDU4Njc5MzMzNTE5ODg0Mjg4.DoVwNg.N4cnf9iQ4kRI-VMZ8GXf0KCd-cE"
 		},
 		"client": {
-			"id": "CLIENT_ID",
-			"secret": "CLIENT_SECRET"
+			"id": "458679333519884288",
+			"secret": "7ghLW5Zpl_3vhtsFbmjLpfoCJDOFUUEp"
 		}
 	},
 	"greeting": "Hi everyone! I'm a help ticket bot, here to connect you and your questions to someone who can answer them. If you have any questions on how to use my functions, use `tic^help`.\n\nよろしくお願いします~",
